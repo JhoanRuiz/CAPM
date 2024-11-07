@@ -13,7 +13,7 @@ entity Categories {
 entity Courses : managed {
     key category : Association to Categories;
     key course_id : UUID;
-        course_name : String50;
+        course_name : String(100);
         price : String(10);
         language : Language;    
 }
